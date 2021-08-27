@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>REPORT CARD</h1>
+    <div class="container"> 
+        <table cellspacing="5" id="in">
+            <caption><b>Insert your marks</b></caption>
+            <tr>
+                <th rowspan="2">Name</th>
+                <th colspan="4">Score</th>
+            </tr>
+            <tr>
+                <th>English</th>
+                <th>Maths</th>
+                <th>Science</th>
+                <th>History</th>
+            </tr>
+            <tr>
+                <td><input type="text" id="name"></td>
+                <td><input type="text" id="eng"></td>
+                <td><input type="text" id="math"></td>
+                <td><input type="text" id="sc"></td>
+                <td><input type="text" id="his"></td>
+            </tr>
+        </table>
+        <button id="btn" onclick="result()">Submit</button>
+        <table cellspacing="5" id="output">
+            <caption><b>Your Result</b></caption>
+            <tr>
+                <th>Name</th>
+                <th>Percentage</th>
+                <th>Grade</th>
+                <th>Pass/Fail</th>
+            </tr>
+            <tr>
+                <td id="rname"></td>
+                <td id="rper"></td>
+                <td id="rgrade"></td>
+                <td id="rpass"></td>
+            </tr>
+
+
+        </table>
+    </div>  
+</body>
+</html>
